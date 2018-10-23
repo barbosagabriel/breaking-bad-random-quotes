@@ -1,0 +1,28 @@
+<div *ngIf="quote$">
+  <div id="container">
+    <blockquote class="quote-text">
+        <div>
+          <span>{{ quote$.quote }}</span>
+          <br><br>
+          <p class="author">{{ quote$.author }}</p>
+        </div>
+    </blockquote>
+  
+    <div [ngSwitch]="quote$.author" class="quote-image">
+      <img *ngSwitchCase="'Badger'" src="assets/img/badger.png">
+      <img *ngSwitchCase="'Gustavo Fring'" src="assets/img/gustavo-fring.png">
+      <img *ngSwitchCase="'Hank Schrader'" src="assets/img/hank.png">
+      <img *ngSwitchCase="'Jesse Pinkman'" src="assets/img/jesse-pinkman.png">
+      <img *ngSwitchCase="'Mike Ehrmantraut'" src="assets/img/mike.png">
+      <img *ngSwitchCase="'Saul Goodman'" src="assets/img/saul-goodman.png">
+      <img *ngSwitchCase="'Skyler'" src="assets/img/skyler.png">        
+      <img *ngSwitchCase="'The fly'" src="assets/img/fly.png">
+      <img *ngSwitchCase="'Walter White'" src="assets/img/walter-white.png">
+      <img *ngSwitchDefault src="assets/img/no-photo.png">
+    </div>
+    <a (click)="getNewQuote()" class="button-reset">Get new quote</a>
+  </div>
+
+
+</div>
+
