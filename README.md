@@ -1,6 +1,7 @@
 # Breaking Bad Random Quotes
 
-A simple app that shows some quotes of Breaking Bad, bitch! 💎
+A simple app that shows some quotes of Breaking Bad! 💎
+Made to pratice with some technologies.
 
 You can see the live demo [here](https://barbosagabriel.github.io/breaking-bad-random-quotes).
 
